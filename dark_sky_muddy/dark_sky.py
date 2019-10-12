@@ -1,9 +1,9 @@
-from typing import List
+from typing import List, Optional
 import requests
 
 
 class Forecast:
-    def __init__(self, temperature: float, precipitation_type: str):
+    def __init__(self, temperature: float, precipitation_type: Optional[str]):
         self.temperature = temperature
         self.precipitation_type = precipitation_type
 
@@ -24,4 +24,4 @@ class DarkSkyAPI:
         json = response.json()
         daily_forecasts = json['daily']['data']
 
-        return [Forecast(forecast['temperatureMax'], forecast['precipType']) for forecast in daily_forecasts]
+        return [Forecast(forecast.get('temperatureMax'), forecast.get('precipType')) for forecast in daily_forecasts]
