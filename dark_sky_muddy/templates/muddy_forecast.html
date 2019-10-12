@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three Day Muddy Forecast</title>
+</head>
+<body>
+    <h1>Muddy Forecast</h1>
+    <h2>Detroit, MI</h2>
+
+    <h3>Mud Conditions</h3>
+    {% if is_three_day_forecast_muddy == true %}
+    <p>It will be muddy at some point during the next three days.</p>
+    {% else %}
+    <p>It will not be muddy during the next three days.</p>
+    {% endif %}
+
+    <footer>Powered by Dark Sky</footer>
+</body>
+</html>
