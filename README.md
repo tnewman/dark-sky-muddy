@@ -12,6 +12,7 @@ pipenv install --dev
 ```
 
 ## Run App in Dev Mode
+- Note: The `DARK_SKY_API_KEY` environment variable is required to run the dev server.
 ```bash
 pipenv run run_dev.py
 ```
