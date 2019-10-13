@@ -1,12 +1,12 @@
-# dark-sky-muddy
+# Dark Sky Muddy
 A web application showing whether or not it will be muddy over the next 3 days.
 
 ## Prerequisites
-1. Python 3
-2. [pipenv](https://pipenv.kennethreitz.org/en/latest/)
+1. [Python 3](https://www.python.org/)
+2. [Pipenv](https://pipenv.kennethreitz.org/en/latest/)
 3. `DARK_SKY_API_KEY` environment variable set to your Dark Sky API Key
 
-## Install pipenv Dependencies
+## Install Pipenv Dependencies
 ```bash
 pipenv install --dev
 ```
