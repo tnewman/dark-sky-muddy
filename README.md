@@ -15,6 +15,7 @@ pipenv install --dev
 ```bash
 pipenv run run_dev.py
 ```
+The application can be accessed at `http://localhost:5000` in the browser.
 
 ## Run Tests
 - Note: The `DARK_SKY_API_KEY` environment variable is required to run integration tests.
